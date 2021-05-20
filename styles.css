@@ -1,0 +1,303 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+/* reusable */
+.row{
+	max-width: 1100px; /* maximální šířka, kvůli responzivitě ne pevná */
+	margin: 0 auto;
+}
+.heading-main h2{
+	text-align: center;
+	font-family: "Tahoma", sans-serif;
+	
+}
+.heading-main h2:after{
+	content: "";
+	display: block;
+	width: 300px;
+	border-bottom: 2px solid #778899;
+	margin: 15px auto;
+}
+.empty-space{
+	height: 60px;
+}
+
+/* header */
+header{
+	background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4)), /* lineární gradient */
+	url("images/ledy.jpg"); /* vložení obrázku do stránky na pozadí */
+	background-size: cover; /* nastavit na celou stránku */
+	height: 80vh; /* viewport procenta výšky */
+	background-attachment: fixed; /* pevný obrázek na pozadí */
+}
+.nav-background{
+	position: fixed;
+	width: 100%;
+	height: 55px;
+	background-color: rgba(0,0,0,0.7);
+	z-index: 50;
+	border-bottom: 2px solid #fff;
+}
+#logo img{
+	position: absolute;
+	width: 10%;
+	top: 65px;
+	left: 5%;
+	z-index: 150;
+}
+nav ul{
+	float: right;
+	margin-top: 15px;
+	position: fixed;
+	margin-left: 20%;
+	z-index: 100; /* posunout na vyšší úroveň  */
+}
+nav ul li{
+	display:inline-block;
+	margin-left: 10px;
+}
+nav ul li a:link,
+nav ul li a:visited{
+	font-family: "Tahoma", sans-serif;
+	color: #fff;
+	font-size: 20px;
+	text-decoration: none;
+	border-bottom: 3px solid transparent;
+}
+nav ul li a:hover,
+nav ul li a:active{
+	transition: border-bottom 0.5s;
+	border-bottom: 3px solid #A9A9A9;
+}
+.header-text{
+	position: absolute;
+	top: 60%;
+	left: 40%;
+	transform: translate(-50%, -50%) /* posunutí rozdělení na střed */
+}
+.header-text h1{
+	color: #ffffff;
+	font-family: "Tahoma", sans-serif;
+	font-size: 50px;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	word-spacing: 2px;
+}
+.btn {
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+	font-family: "Tahoma", sans-serif;
+	font-size: 20px;
+	border: 2px solid #fff;
+	border-radius: 8px;
+	margin-top: 10px;
+	padding: 4px 12px;
+	letter-spacing: 1px;
+	
+}
+/******************* pseudotřídy
+.test{
+	color: #fff;
+	font-size: 50px;
+}
+.test:active,
+.test:hover{
+	color:red;
+}
+.test:link,
+.test:visited{
+	color:gray;
+}
+***********************/
+.btn-f:link,
+.btn-f:visited{
+	background: rgba(256,256,256,0.4);
+}
+.btn-f:hover,
+.btn-f:active{
+	transition: background 1.2s; /* plynulý přechod */
+	background: rgba(256,156,256,0.4);
+	border: 2px solid grey;
+}
+.btn-e:link,
+.btn-e:visited{
+	
+}
+.btn-e:hover,
+.btn-e:active{
+	transition: background 1.2s;
+	background: rgba(200,256,256,0.4);
+	border: 2px solid grey;
+}
+/********** Mobile navigation **************/
+.mobile-nav-icon{
+	float: right;
+	margin-top: 8px;
+	display: none;
+	
+}
+
+
+
+/********** About us **************/
+.photo-examples img{
+	width: 100%;
+	box-shadow: 5px 5px 5px grey;
+}
+.voda-info img{
+	width: 100%;
+	box-shadow: 5px 5px 5px grey;	
+}
+.text-voda{
+	margin-bottom: 25px;
+}
+.text-voda div{
+	width: 50px;
+	height: 50px;
+	border: 2px solid #000;
+	text-align: center;
+	border-radius: 50%;
+	padding: 13px;
+	float: left;
+}
+.text-voda p{
+	margin-left: 70px;
+	font-size: 20px;
+	line-height: 115%;
+}
+/********** Reference **************/
+.references{
+	background: linear-gradient(rgba(0,0,0,0.6),
+	rgba(0,0,0,0.4)), url(images/pod_mlynem.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+}
+.references h2{
+	color: #fff;
+	padding-top: 40px;
+}
+
+.references h2:after{
+	border-bottom: 3px solid #A9A9A9;
+}
+.ref {
+	color: #fff;
+	font-family: "Tahoma", sans-serif;
+	font-size: 20px;
+}
+.ref p{
+	font-style: italic;
+	padding: 5px;
+}
+.photo-name{
+	margin-top: 30px;
+	margin-bottom: 150px;
+}
+.photo-name p{
+	text-align: center;
+	padding-top: 55px;
+	
+	font-style: normal;
+}
+.photo-name img{
+	width: 150px;
+	border-radius: 50%;
+	float: left;
+}
+/********** photo gallery **************/
+.photoseg li{
+	list-style-type: none;
+	background-color: #000;
+	overflow: hidden;
+}
+
+.photoseg img{
+	width: 100%;
+	opacity: 0.5;
+	transform: scale(1.15);
+}
+.photoseg img:hover{
+	transition: transform 0.5s, opacity 0.5s;
+	transform: scale(1.03);
+	opacity: 1;
+}
+/********** contact form **************/
+
+.contact-form{
+	max-width: 700px;
+	text-align: center;
+	
+}
+.contact-form input{
+	width: 80%;
+	margin: 5px 0px;
+	padding: 7px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	box-shadow: 3px 3px 3px grey;
+	font-family: "Tahoma", sans-serif;
+}
+.contact-form textarea{
+	width: 80%;
+	margin: 5px 0px;
+	padding: 7px;
+	border: 2px solid grey;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px grey;
+	font-family: "Tahoma", sans-serif;
+}
+input[type="submit"]{
+	background-color: #778899;
+	color: #fff;
+	font-size: 20px;
+}
+input[type="submit"]:hover{
+	transition: background-color 0.5s;
+	background-color: #D8BFD8;
+	color: #000;
+	font-size: 20px;
+}
+/********** footer **************/
+.footer-page{
+	background: #6495ED;
+	margin-top: 30px;
+	color: #fff;
+	font-family: "Tahoma", sans-serif;
+	
+}
+.social{
+	text-align: center;
+	margin: 10px 0px;
+}
+.social p{
+	display: inline;
+	
+}
+.social p a:link,
+.social p a:visited{
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+}
+.social p a:hover,
+.social p a:active{
+	color: #000;
+}
+.footer-text{
+	text-align: center;
+	margin: 10px 0px;
+}
+
+/********** ukončení float **************/
+.clearfix {zoom: 1}
+.clearfix:after{
+	content: ".";
+	clear: both;
+	display: block;
+	height: 0;
+	visibility: hidden;
+}
+

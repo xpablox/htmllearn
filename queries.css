@@ -1,0 +1,143 @@
+@media only screen and (max-width: 931px){
+	/* header */
+	
+	.heder-text {
+		width: 100%;
+		left: 0%;		
+	}
+	
+	.header-text h1{
+		text-align: center;
+		transform: translate(0%, 0%);
+		
+		left: 0%;
+		font-size: 30px;
+	}
+	.btn {
+		display: block;
+		margin-left: 0px;
+		text-align: center;
+	}
+	
+}
+
+
+
+
+@media only screen and (max-width: 1150px){ /* co se přepíše od 1150px */
+	/********** photo gallery **************/
+	.photoseg {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	.col.span-1-of-3.ref {
+		width: 49%;
+	}
+	.ref:nth-child(3) { /* platí pouze pro třetí výskyt třídy .ref   */
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 750px){ /* co se přepíše od 750px */
+	/* .photoseg {
+		margin-right: 10px;
+		margin-left: 10px;
+	} */
+	
+	.photoseg .col {
+		margin-left: 0;
+	}
+	
+	.photoseg li{
+	width: 100%;
+	}
+	/********** ledove kry **************/
+	
+	.span-1-of-2.text1{
+		width: 100%;
+		margin-left: 0px;
+		padding-right: 5%;
+		padding-left: 5%;
+	}
+	
+	/********** vodní proud **************/
+	.photo-examples .span-1-of-2{
+		width: 96%;
+	}
+	.photo-examples .col{
+		margin-left: 0;
+	}
+	.photo-examples img{
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+}
+@media only screen and (max-width: 800px){
+	
+	nav ul {
+		display: none;
+		z-index: 200;
+	}
+	
+	nav ul li{
+		display: block;
+		margin-top: 3px;
+	}
+	
+	nav ul li a:hover,
+	nav ul li a:active{
+		border-bottom: 3px solid transparent;
+	}
+	
+	.nav-background{
+		/* display: none; */
+	}
+	
+	.mobile-nav-back{
+		height: 200px;
+		position: fixed;
+		width: 100%;
+		background-color: rgba(0,0,0,0.8);
+		border-bottom: 2px solid #fff;
+		display: none;
+		z-index: 120;
+	}
+	.mobile-nav-icon{
+		display: inline-block;
+		z-index: 200;
+		position: fixed;
+		right: 6px;
+	}
+}
+
+
+
+@media only screen and (max-width: 685px){
+	
+	/********** Reference **************/
+	.col.span-1-of-3.ref {
+		width: 100%;
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+	.photo-name {
+		float: right;
+		margin-top: 15px;
+		margin-bottom: 15px;
+	}
+}
+@media only screen and (max-width: 685px){
+	/*** nase voda ***/
+	.voda-info .span-1-of-2{
+		width: 96%;
+		
+	}
+	.voda-info img {
+		margin-left: 2%;
+		margin-right: 2%;
+	}
+	.voda-info p{
+		margin-top: 20px;
+		padding: 5px;
+	}
+}
